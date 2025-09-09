@@ -1,0 +1,79 @@
+/* Global Styles */
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Question Card Animations */
+.question-card {
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.question-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-left-color: #2185d0;
+}
+
+.question-card.expanded {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  border-left-color: #21ba45;
+}
+
+/* Filter animations */
+.ui.segment {
+  transition: box-shadow 0.2s ease;
+}
+
+.ui.segment:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Image styles */
+.ui.image {
+  border-radius: 8px;
+}
+
+/* Button hover effects */
+.ui.button {
+  transition: all 0.2s ease;
+}
+
+/* Form styling */
+.ui.form .field > label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Statistics styling */
+.ui.statistic > .value {
+  color: #2185d0;
+}
+
+/* Message styling */
+.ui.message {
+  border-radius: 8px;
+}
+
+/* Card content spacing */
+.ui.card > .content > .description {
+  line-height: 1.6;
+}
+
+/* Tag spacing */
+.ui.label {
+  margin: 2px !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .ui.grid > .row > .column {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  
+  .ui.container {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+  }
+}
